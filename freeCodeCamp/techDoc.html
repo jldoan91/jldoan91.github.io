@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Python</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="css/techDoc.css">
+  <style media="screen">
+  @media (max-width:800px){
+    body {
+      font-size: 75%;
+    }
+    #navbar {
+      position: fixed;
+      width: 240px;
+    }
+    #main-doc {
+      padding-top: 5px;
+      padding-left: 270px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <header>
+        <li><h1>Python Documentation</h1></li>
+      </header>
+      <a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+      <a class="nav-link" href="#Main_Uses_of_Python"><li>Main Uses of Python</li></a>
+      <a class="nav-link" href="#Getting_Started"><li>Getting Started</li></a>
+      <a class="nav-link" href="#Frameworks"><li>Frameworks</li></a>
+      <a class="nav-link" href="#Resources"><li>Resources</li></a>
+    </ul>
+  </nav>
+
+  <main id="main-doc"><!-- User Story #1 -->
+    <section class="main-section" id="Introduction"><!-- User Story #2 -->
+      <header><!-- User Story #3-->
+        <h1>Introduction</h1>
+      </header>
+      <p>
+        Python is an interpreted language for general-purpose programming. It first released in 1991 and emphasizes code readability. Pythono and CPython are managed by Python Software Foundation, which is a non-profit organization.
+      </p>
+      <p>
+        Python was created by Guido van Rossum in the late 1980s. It was first implemented in December of 1989 as a successor to the ABC language.
+      </p>
+      <p>
+        Here's a little sample of what Python code looks like.
+      </p>
+      <pre>
+        <code>
+          def area_by_shoelace(x, y):
+          "Assumes x,y points go around the polygon in one direction"
+          return abs( sum(i * j for i, j in zip(x, y[1:])) + x[-1] * y[0]
+          -sum(i * j for i, j in zip(x[1:], y)) - x[0] * y[-1]) / 2
+        </code>
+      </pre>
+      <p>
+        Python is dynamically typed so you don't have to define the data type as it will guess based on the value the variable contains.
+      </p>
+      <p>
+        For e.g.
+        <pre>
+          <code>
+            myvar = "Hello Python"
+          </code>
+        </pre>
+        In this code myvar is a string.
+      </p>
+      <p>
+        If you were to type this code later
+        <pre>
+          <code>
+            myvar = 1
+          </code>
+        </pre>
+        myvar would now be an int rather than string
+      </p>
+    </section>
+    <section class="main-section" id="Main_Uses_of_Python"><!-- User Story #2 -->
+      <header><!-- User Story #3-->
+        <h1>Main Uses of Python</h1>
+      </header>
+      <p>The main uses of Python include:</p>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Science (eg. Machine Learning, Data Analysis and Visualization)</li>
+        <li>Scripting</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Getting_Started"><!-- User Story #2 -->
+      <header><!-- User Story #3-->
+        <h1>Getting Started</h1>
+      </header>
+      <p>
+        You can check if you have Python installed on windows by opening the command line (cmd.exe) and entering the following
+        <pre>
+          <code>
+            C:\Users\Your Name>python --version
+          </code>
+        </pre>
+        If you're on a Mac or Linux you can enter the following in terminal/command line
+        <pre>
+          <code>
+            python --version
+          </code>
+        </pre>
+      </p>
+      <p>
+        Most PCs and MACs come installed with Python. However if you find that you do not have it installed on your computer you can download it <a href="https://www.python.org/getit/">here</a>.
+      </p>
+      <p>
+        In order to run a Python file you'll go into the command line and enter "python filename.py" below is an example.
+      </p>
+      <p>
+        <pre>
+          <code>
+            C:\Users\Your Name>python helloworld.py
+          </code>
+        </pre>
+      </p>
+      <p>
+        You can enter the Python command line by entering "python" into the terminal/command line application
+      </p>
+      <p>
+        Once in to the Python command line you can write any python and it will run similar to the console log in web browsers for JavaScript.
+      </p>
+    </section>
+    <section class="main-section" id="Frameworks"><!-- User Story #2 -->
+      <header><!-- User Story #3-->
+        <h1>Frameworks</h1>
+      </header>
+      <p>The top Python frameworks to learn include:</p>
+      <ul>
+        <li>django</li>
+        <li>Pyramid</li>
+        <li>TurboGears</li>
+        <li>Web2py</li>
+        <li>Flask</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Resources"><!-- User Story #2 -->
+      <header><!-- User Story #3-->
+        <h1>Resources</h1>
+      </header>
+      <p>
+        Here is a list of links to resources where you can start learning about Python:
+      </p>
+      <ul>
+        <li><a href="https://www.python.org">Python</a></li>
+        <li><a href="https://www.udemy.com/the-modern-python3-bootcamp/">Colt Steele's Udemy Python Course</a></li>
+        <li><a href="https://www.codecademy.com/learn/learn-python">codeCademy Python Course</a></li>
+        <li><a href="https://guide.freecodecamp.org/python">freeCodeCamp Python Guides</a></li>
+        <li><a href="https://talkpython.fm/">Talk Python to Me Podcast</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

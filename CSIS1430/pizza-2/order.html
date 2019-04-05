@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place your order!</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <ul>
+      <li><a href="http://CSIS1430/pizza-2/index.html">Home</a></li>
+      <li><a href="http://the-simple-stuff.com/CSIS1430/pizza-2/contact.html">Contact</a></li>
+      <li><a href="http://the-simple-stuff.com/CSIS1430/pizza-2/about.html">About</a></li>
+      <li><a class="active" href="http://the-simple-stuff.com/CSIS1430/pizza-2/order.html">Order</a></li>
+    </ul>
+    <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
+      <!--Text fields-->
+      <strong>First Name:</strong> <input type="text" name="first">
+      <strong>Last Name:</strong> <input type="text" name="last"><br>
+      <strong>Address 1:</strong> <input type="text" name="add1"><br>
+      <strong>Address 2:</strong> <input type="text" name="add2"><br>
+      <strong>City:</strong> <input type="text" name="city">
+      <strong>State:</strong> <input type="text" name="state">
+      <strong>Zipcode:</strong> <input type="text" name="zip"><br>
+      <strong>Phone #:</strong> <input type="text" name="phone">
+      <strong>Email:</strong> <input type="text" name="email"><br>
+    <!--Text Area-->
+    <strong>Comments:</strong> <textarea name="comments" rows="4" cols="60"></textarea><br>
+    <!--Drop Down-->
+      <strong>Crust:</strong> <select class="" name="crust">
+        <option value="pan">Pan</option>
+        <option value="hand-tossed">Hand-tossed</option>
+        <option value="thin">Thin</option>
+        <option value="stuffed">Stuffed</option>
+      </select><br>
+      <!--Radio-->
+      <strong>Size:</strong><br>
+      <input type="radio" name="size">8" (Personal)<br>
+      <input type="radio" name="size">10" (Small)<br>
+      <input type="radio" name="size">12" (Medium)<br>
+      <input type="radio" name="size">14" (Large)<br>
+      <!--Check Box-->
+      <strong>Toppings:</strong><br>
+      <input type="checkbox" name="toppings[]" value="tomatoes">Tomatoes
+      <input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni<br>
+      <input type="checkbox" name="toppings[]" value="onions">Onions
+      <input type="checkbox" name="toppings[]" value="sausage">Sausage<br>
+      <input type="checkbox" name="toppings[]" value="bell-peppers">Bell Peppers
+      <input type="checkbox" name="toppings[]" value="chicken">Chicken<br>
+      <input type="checkbox" name="toppings[]" value="jalapenos">Jalapenos
+      <input type="checkbox" name="toppings[]" value="ham">Ham<br>
+      <input type="checkbox" name="toppings[]" value="olives">Olives
+      <input type="checkbox" name="toppings[]" value="bacon">Bacon<br>
+      <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms
+      <input type="checkbox" name="toppings[]" value="salami">Salami<br>
+      <input type="checkbox" name="toppings[]" value="pineapple">Pineapple
+      <input type="checkbox" name="toppings[]" value="anchovies">Anchovies<br>
+      <input type="submit" name="submit">
+      <input type="reset" name="Reset">
+    </form>
+  </body>
+</html>

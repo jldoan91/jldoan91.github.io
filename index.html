@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Josh Doan</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style media="screen">
+  @media (max-width:635px) {
+    .jumbotron p, .jumbotron li a {
+      font-size: 10px;
+    },
+    .jumbotron h1 {
+      font-size: 26px;
+    },
+    .jumbotron h3 {
+      font-size: 17px;
+    },
+    .contactBtn a i {
+      height: 54px;
+      width: 54px;
+      line-height: 54px;
+    }
+  }
+  @media (max-height:800px){
+    #welcome-section {
+      height: 100%;
+    }
+    #projects {
+      height: 100%;
+    }
+    #contact {
+      height: 100%;
+    }
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#bs-nav">
+  <main>
+    <!-- navbar starts -->
+    <div id="navbar">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1>Josh Doan</h1>
+          </div>
+          <div id="bs-nav" class="collapse navbar-collapse">
+            <ul>
+              <li><a href="#welcome-section" class="navBtn">About</a></li>
+              <li><a href="#projects" class="navBtn">Portfolio</a></li>
+              <li><a href="#contact" class="navBtn">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar ends -->
+    <div class="container pad-top">
+      <!-- about section starts -->
+      <div id="welcome-section" class="jumbotron">
+        <h1>About</h1>
+        <hr>
+        <img alt="Josh Doan" class="about-img" src="https://avatars3.githubusercontent.com/u/29557299?v=3"/>
+        <p>
+          Hello and welcome to the-simple-stuff.com,
+        </p>
+        <p>
+          My name is Josh, my hobbies include playing video games, playing with my dog, spending time with my wife, and anything related to computers. My favorite video games include the Mass Effect series, World of Warcraft, and Overwatch. Most of the time I spend with my wife we go to dog parks with our puppies, or watch netflix.
+        </p>
+        <p>
+          I built my first computer in 9th grade and have loved working with computers ever since then, I have now built a total of 12 computers in the last 10 years for friends, family, or myself. I have been learning web development through Colt Steeles "The Web Developer Bootcamp" on Udemy as well as freecodecamp's curriculum this last year.
+        </p>
+      </div>
+      <!-- about section ends -->
+      <!-- portfolio section starts -->
+      <div id="projects" class="jumbotron">
+        <h1>Portfolio</h1>
+        <p>
+          Below are the projects I have worked on while learning web development.
+        </p>
+        <hr>
+        <!-- CSIS1430 Projects -->
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-tile">
+          <h3><a href="CSIS1430/index.html">CSIS1430 Class Projects</a></h3>
+          <ul>
+            <li>
+              <a href="CSIS1430/tables/tables-and-youtube.html" target="blank">Youtube and tables</a>
+            </li>
+            <li>
+              <a href="CSIS1430/image-map/index.html" target="blank">Map of Utah</a>
+            </li>
+            <li>
+              <a href="CSIS1430/pizza-2/index.html" target="blank">Pizza Parlor</a>
+            </li>
+            <li>
+              <a href="CSIS1430/1430-midterm/index-1.html" target="blank">Midterm</a>
+            </li>
+            <li>
+              <a href="CSIS1430/js-birthday/index.html" target="blank">Happy Birthday!</a>
+            </li>
+            <li>
+              <a href="CSIS1430/mad-lib/index.html" target="blank">Mad Libs</a>
+            </li>
+            <li>
+              <a href="CSIS1430/guess/index.html" target="blank">Guessing Game</a>
+            </li>
+            <li>
+              <a href="CSIS1430/lottery/index.html" target="blank">The Lottery Game</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Udemy Webdev Projects -->
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-tile">
+          <h3><a href="#">Colt Steele's Web Developer Bootcamp Projects</a></h3>
+          <ul>
+            <li>
+              <a href="Colt-Udemy-Bootcamp/JavaScript/color-game.html" target="blank">Color Guessing Game</a>
+            </li>
+            <li>
+              <a href="Colt-Udemy-Bootcamp/JQuery/TodoList/index.html" target="blank">Todo List</a>
+            </li>
+            <li>
+              <a href="Colt-Udemy-Bootcamp/Patatap-Clone/index.html" target="blank">Patatap Clone</a>
+            </li>
+          </ul>
+        </div>
+        <!-- FreeCodeCamp Projects -->
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-tile">
+          <h3><a href="#">FreeCodeCamp Projects</a></h3>
+          <ul>
+            <li>
+              <a href="freeCodeCamp/tribute.html" target="blank">Tribute Page</a>
+            </li>
+            <li>
+              <a href="freeCodeCamp/survey.html" target="blank">Survey Form</a>
+            </li>
+            <li>
+              <a href="freeCodeCamp/product.html" target="blank">Product Landing Page</a>
+            </li>
+            <li>
+              <a href="freeCodeCamp/techDoc.html" target="blank">Technical Documentation Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- portfolio section ends -->
+      <!-- contact section starts -->
+      <div id="contact" class="jumbotron">
+        <h1>Contact</h1>
+        <!-- <p>
+        You can reach me using the contact form below
+      </p> -->
+      <hr>
+      <!-- <form class="contactForm">
+      <div class="form-group">
+      <label for="firstName">First Name: </label>
+      <input type="text" class="form-control" required name="firstName" placeholder="First Name">
+      <br>
+      <label for="lastName">Last Name: </label>
+      <input type="text" class="form-control" required name="lastName" placeholder="Last Name">
+      <br>
+      <label for="email">Email Address: </label>
+      <input type="email" class="form-control" required name="email" placeholder="Email">
+      <br>
+      <textarea name="message" class="form-control" placeholder="Message" rows="6" cols="50"></textarea>
+      <br>
+      <input type="submit" name="submit" value="Submit">
+    </div>
+  </form> -->
+
+  <div class="contactBtns">
+    <ul>
+      <li class="contactBtn">
+        <a title="FreeCodeCamp" id="profile-link" target="_blank" href="https://www.freecodecamp.com/jldoan91">
+          <i class="fa fa-free-code-camp fa-3x"></i>
+        </a>
+      </li>
+
+      <li class="contactBtn">
+        <a title="LinkedIn" target="blank" href="https://www.linkedin.com/in/josh-doan-328995138">
+          <i class="fa fa-linkedin fa-3x"></i>
+        </a>
+      </li>
+
+      <li class="contactBtn">
+        <a title="GitHub" target="blank" href="https://github.com/jldoan91">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </li>
+
+      <li class="contactBtn">
+        <a title="FaceBook" target="blank" href="https://www.facebook.com/josh.doan.54">
+          <i class="fa fa-facebook-official fa-3x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- contact section ends -->
+<!-- footer section -->
+<div class="footer">
+  <hr>
+  Written by <a href="https://www.freecodecamp.com/jldoan91">Josh Doan</a>
+</div>
+</div>
+</main>
+<!-- jquery bootstrap and local js script links -->
+<script type="text/javascript" src="assets/js/portfolio.js"></script>
+</body>
+</html>

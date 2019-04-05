@@ -1,0 +1,88 @@
+body {
+  background-color: khaki;
+  color: darkgray;
+  font-family: fantasy;
+}
+
+ul {
+  border: 2px solid black;
+  list-style-type: none;
+  margin: 0px 0px 25px 0px;
+  padding: 0;
+  background-color: lightgray;
+  overflow: hidden;
+  bottom: 0;
+  width: 98%;
+  position: fixed;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  margin: 5px;
+  display: block;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+li a:hover {
+  background-color: darkgray;
+  color: khaki;
+}
+
+.active {
+  background-color: black;
+  color: gold;
+}
+
+div {
+  border: 2px dotted darkgray;
+  margin: 50px;
+  padding: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+.grp1 {
+  text-align: right;
+  float: left;
+  Width: 75%;
+  overflow: hidden;
+}
+
+.grp1 img {
+  height: 200px;
+  float: left;
+}
+
+.grp2 {
+  text-align: left;
+  float: right;
+  width: 75%;
+  overflow: hidden;
+}
+
+.grp2 img {
+  float: right;
+  height: 200px;
+}
+
+.grp3 {
+  text-align: center;
+  float: left;
+  width: 75%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.grp3 img {
+  float: right;
+  width: 200px;
+}

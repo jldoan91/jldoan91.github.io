@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>fCC Survey Form!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/survey.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">This is a survey page I built for the freeCodeCamp survey form project</p>
+    </div>
+    <div class="jumbotron">
+      <form class="" id="survey-form" action="index.html" method="post">
+        <div class="form-group">
+          <label for="name" id="name-label">*First and Last Name: </label>
+          <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your first and last name">
+        </div>
+        <div class="form-group">
+          <label for="" id="email-label">*Email Address: </label>
+          <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="" id="number-label">*Age: </label>
+          <input type="number" class="form-control" id="number" name="number" required min="1" max="100" placeholder="Enter your age">
+        </div>
+        <!-- type of coder -->
+        <div class="form-group">
+          <label for="role">What type of coder are you?</label>
+          <select class="form-control" id="dropdown" name="role">
+            <option value="">Select one</option>
+            <option value="">Student</option>
+            <option value="">Hobbyist</option>
+            <option value="">Professional</option>
+            <option value="">Self Learner</option>
+          </select>
+        </div>
+        <!-- favorite race -->
+        <div class="form-group">
+          <label for="race">What's your favorite Mass Effect race?</label>
+          <div class="races">
+            <input type="radio" name="race" value="human">
+            <label for="human">Human</label>
+            <input type="radio" name="race" value="turian">
+            <label for="turian">Turian</label>
+            <input type="radio" name="race" value="salarian">
+            <label for="salarian">Salarian</label>
+            <input type="radio" name="race" value="asari">
+            <label for="asari">Asari</label>
+            <br>
+            <input type="radio" name="race" value="krogan">
+            <label for="krogan">Krogan</label>
+            <input type="radio" name="race" value="quarian">
+            <label for="quarian">Quarian</label>
+            <input type="radio" name="race" value="drell">
+            <label for="drell">Drell</label>
+            <input type="radio" name="race" value="geth">
+            <label for="geth">Geth</label>
+          </div>
+        </div>
+        <!-- favorite types of projects -->
+        <div class="form-group">
+          <label for="projects">What is your favorite type of project so far?</label>
+          <div class="checkboxes">
+            <input type="checkbox" name="responsiveWeb" value="responsive">
+            Responsive Web Design
+            <br>
+            <input type="checkbox" name="algorithms" value="algorithms">
+            Algorithms and Data Structures
+            <br>
+            <input type="checkbox" name="frontEndLibrary" value="frontEnd">
+            Front End Libraries
+            <br>
+            <input type="checkbox" name="dataVisualization" value="data">
+            Data Visualization
+            <br>
+            <input type="checkbox" name="apis" value="api">
+            Apis and Microservices
+            <br>
+            <input type="checkbox" name="isAndQa" value="isqa">
+            Information Security and Quality Assurance
+            <br>
+          </div>
+        </div>
+        <!-- favorite projects -->
+        <div class="form-group">
+          <textarea name="name" class="form-control" rows="8" cols="60" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" class="btn btn-default" id="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

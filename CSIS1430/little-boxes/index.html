@@ -1,0 +1,125 @@
+<html>
+    <head><title>Boxes Example</title>
+        <style>
+            .background
+            {
+                background-image:url(http://www.mariomayhem.com/fun/smb_level_editor/images/overworld_bg.png);
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+            }
+            div.box1
+            {
+                background-color:black;
+                color:white;
+                border-style:groove;
+                border-color:blue;
+                margin:20px;
+                padding:20px;
+                height:300px;
+                width:250px;
+                position:absolute;
+                top:30px;
+                left:500px;
+            }
+            div.containerBox
+            {
+                background-color:#104040;
+                color:white;
+                border-style:solid;
+                border-color:black;
+                border-width:1px;
+                padding:10px;
+                position:relative;
+                top:-7px;
+                left:-7px;
+                height:auto;
+                width:auto;
+            }
+            div.shadowBox
+            {
+              content:url(https://s-media-cache-ak0.pinimg.com/originals/8a/49/4b/8a494b1e5e26314180a1ded2c8d0a6a5.png);
+              width: 200px;
+              height: 145px;
+              margin-left: 1000px;
+            }
+
+            #question1
+            {
+              content:url(https://ih1.redbubble.net/image.313110744.0154/flat,800x800,075,f.u1.jpg);
+              width: 75px;
+              height: 75px;
+            }
+
+            #question2
+            {
+              content:url(https://ih1.redbubble.net/image.313110744.0154/flat,800x800,075,f.u1.jpg);
+              width: 75px;
+              height: 75px;
+            }
+
+            .floating-box
+            {
+                content:url(https://ih1.redbubble.net/image.313110744.0154/flat,800x800,075,f.u1.jpg);
+                float: left;
+                width: 75px;
+                height: 75px;
+            }
+
+            .floating-box2
+            {
+              content:url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0396/3573/rbricks_large_shop_thumb.png);
+              width: 75px;
+              height: 75px;
+              float: left;
+            }
+
+            .after-box {
+                clear: left;
+                border: 3px solid red;
+            }
+            #custom{
+              content:url(http://piq.codeus.net/static/media/userpics/piq_222354_400x400.png);
+                width: 200px;
+                height: 200px;
+                margin-top: 140px;
+            }
+
+            #pirhana-pipe
+            {
+              float: right;
+              content:url(https://i.imgur.com/MRXSPQs.gif);
+              width: 200px;
+              height: 200px;
+              margin-top: -255px;
+            }
+
+        </style>
+    </head>
+    <body>
+      <div class="background">
+        <h1> Little Boxes </h1>
+        <div class='shadowBox'>
+        </div>
+
+
+
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box2">Floating box</div>
+        <div class="floating-box">Floating box</div>
+
+
+
+
+        <div id="custom"></div>
+        <div id="pirhana-pipe"></div>
+
+</div>
+    </body>
+</html>

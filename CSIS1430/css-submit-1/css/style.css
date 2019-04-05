@@ -1,0 +1,26 @@
+img{
+  width:300px;
+}
+
+p:nth-of-type(1){
+  color: darkorange;
+}
+
+p:nth-of-type(2){
+  color: blue;
+}
+
+p:nth-of-type(3){
+  color: red;
+}
+
+body{
+  border:2px double blue;
+  padding:10px;
+  background-color:pink;
+  margin:2;
+}
+
+a{
+  color:orangered;
+}

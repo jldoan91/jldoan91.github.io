@@ -1,0 +1,109 @@
+body {
+  text-align: center;
+  background-color: red;
+  color: black;
+  font-family: Copperplate Gothic light;
+}
+
+.active {
+  background-color: black;
+  color: gray;
+}
+
+.titlebar {
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  margin: auto;
+  background-color: darkred;
+  width: 75%;
+}
+
+.navbar {
+  left: 2%;
+  position: fixed;
+  background-color: darkred;
+  border: 2px solid white;
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 7%;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: white;
+  color: darkred;
+}
+
+
+.about-img {
+  float: right;
+  width: 20%;
+  border: 2px solid white;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+#portfolio ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#portfolio li {
+  display: inline;
+}
+
+#portfolio li a {
+  width: 15%;
+  height: 5%;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: red;
+  color: black;
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+#portfolio li a:hover {
+  border: 2px solid red;
+  background-color: black;
+  color: red;
+}
+
+.container {
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: darkred;
+  color: white;
+  border: 2px solid white;
+  width: 75%;
+  overflow: hidden;
+}
+
+.signature {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  color: white;
+}
+
+.signature a {
+  color: maroon;
+}

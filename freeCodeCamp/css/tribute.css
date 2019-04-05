@@ -1,0 +1,11 @@
+body {
+  background-color: #ddd;
+}
+
+.title-background {
+  overflow: hidden;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #5bf;
+}

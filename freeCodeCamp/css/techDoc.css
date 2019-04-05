@@ -1,0 +1,50 @@
+#navbar {
+  height: 100%;
+  width: 340px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+#main-doc {
+  padding-top: 5px;
+  padding-left: 370px;
+}
+
+#navbar li {
+  list-style: none;
+  color: black;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  left: -40px;
+  position: relative;
+  padding-left: 40px;
+  top: -18px
+}
+
+#navbar header li {
+  height: 80px;
+  line-height: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link li {
+  height: 50px;
+  line-height: 50px;
+}
+
+code{
+  display:block;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+  border-radius:5px;
+}

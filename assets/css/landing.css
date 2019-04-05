@@ -1,0 +1,215 @@
+#welcome-section {
+  height: 100vh;
+}
+
+.project-tile {
+  position: inherit;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#navbar {
+  top: 0;
+  position: fixed;
+}
+
+@media (max-height:635px) {
+  .jumbotron p, .jumbotron li a {
+    font-size: 10px;
+  }
+  .jumbotron h1 {
+    font-size: 26px;
+  }
+  .jumbotron h3 {
+    font-size: 17px;
+  }
+  .contactBtn a i {
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+  }
+}
+
+#welcome-section img {
+  border: 3px solid rgba(0, 0, 139, 1);
+  border-radius: 25px;
+  float: left;
+  margin-right: 15px;
+  width: 25%;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.contactBtn a i {
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  text-decoration: none;
+  background-color: rgb(95, 158, 160);
+  border: 2px solid rgb(0, 0, 139);
+  border-radius: 50%;
+  color: rgba(0, 0, 139);
+}
+
+.contactBtn a i:hover {
+  border: 2px solid rgb(95, 158, 160);
+  background-color: rgb(135, 206, 250);
+  color: rgb(95, 158, 160);
+}
+
+body {
+  position: relative;
+  background-color: rgba(95, 158, 160, 1);
+  font-family: Copperplate Gothic light;
+}
+
+.pad-top {
+  padding-top: 75px;
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgba(135, 206, 250, 1);
+  border: 2px solid rgba(0, 0, 139, 1);
+  width: 100%;
+}
+
+.navbar h1 {
+  font-weight: bold;
+  color: rgba(0, 0, 139, 1);
+  float: left;
+  margin: 10px;
+}
+
+.jumbotron {
+  border: 2px solid rgba(0, 0, 139, 1);
+  color: rgba(0, 0, 139, 1);
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+ul li {
+  float: left;
+}
+
+.navBtn {
+  color: rgba(95, 158, 160, 1);
+  border: 2px solid rgba(95, 158, 160, 1);
+  margin: 7px;
+  text-align: center;
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.navBtn:hover {
+  color: rgba(0, 0, 139, 1);
+  text-decoration: none;
+  background-color: rgba(95, 158, 160, 1);
+  border: 2px solid rgba(0, 0, 139, 1);
+}
+
+.active {
+  color: rgba(0, 0, 139, 1);
+  text-decoration: none;
+  background-color: rgba(95, 158, 160, 1);
+  border: 2px solid rgba(0, 0, 139, 1);
+}
+
+.contactForm {
+  margin: 15px auto;
+  width: 50%;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 a {
+  text-decoration: none;
+  color: rgb(0, 0, 139);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: rgb(211, 211, 211);
+}
+
+#projects ul {
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+}
+
+#projects li {
+  display: inline;
+}
+
+#projects li a {
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(95, 158, 160);
+  border: 2px solid rgb(0, 0, 139);
+  color: rgb(0, 0, 139);
+  margin: 2px;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+#projects li a:hover {
+  text-decoration: none;
+  border: 2px solid rgb(95, 158, 160);
+  background-color: rgb(135, 206, 250);
+  color: rgb(95, 158, 160);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgb(95, 158, 160);
+}
+
+.navbar-default .navbar-toggle:hover {
+  border-color: rgb(0, 0, 139);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgb(95, 158, 160);
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: rgb(0, 0, 139);
+}
+
+.navbar-default .navbar-toggle:focus {
+ background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: rgb(95, 158, 160);
+}
+
+.navbar-default .navbar-collapse {
+  border: 2px solid rgb(135, 206, 250);
+}
