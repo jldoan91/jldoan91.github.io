@@ -129,7 +129,8 @@ ul li {
   text-decoration: none;
   background-color: transparent;
   /* background-color: rgba(95, 158, 160, 1); */
-  border: 2px solid rgba(0, 0, 139, 1);
+  border: 2px solid rgba(95, 158, 160, 1);
+  /* border: 2px solid rgba(0, 0, 139, 1); */
 }
 
 .active {
