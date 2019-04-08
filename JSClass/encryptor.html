@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encryptor/Decryptor</title>
+    <link rel="stylesheet" href="css/encryptor.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="encryptBox" class="container">
+            <h1>Encrypt</h1>
+            <hr>
+            Enter your message:
+            <input id="originalMessage" type="text">
+            <br>
+            Key:
+            <input id="key" type="text">
+            <br>
+            <button id="encrypt">Encrypt</button>
+        </div>
+
+        <div id="msgBox" class="container">
+            <h1 id="msgHeader">Your Message</h1>
+            <hr>
+            <div id="displayMessage"></div>
+        </div>
+
+        <div id="decryptBox" class="container">
+            <h1>Decrypt</h1>
+            <hr>
+            Enter your key:
+            <input id="decryptKey" type="text">
+            <br>
+            <button id="decrypt">Decrypt</button>
+            <br>
+            You have <span id="attemptCount">3</span> attempts left!
+        </div>
+    </main>
+    <script src="js/encryptor.js"></script>
+</body>
+
+</html>

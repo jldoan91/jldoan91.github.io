@@ -1,0 +1,30 @@
+body{
+    background: skyblue;
+    color: white;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  span{
+    font-weight: bold;
+    color: rgb(255, 0, 25);
+  }
+  
+  .container{
+    background: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    border: solid 2px white;
+    border-radius: 25px;
+    width: 13rem;
+    overflow-wrap: break-word;
+  }
+  
+  button {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
