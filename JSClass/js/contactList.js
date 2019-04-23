@@ -80,5 +80,7 @@ $('ul').on('click', '.delete', function(event){
   });
   //set localstorage to new array without the clicked contact
   localStorage.setItem('contacts', JSON.stringify(contactList));
-  $(this).parent().remove();
+  $(this).parent().fadeOut(500, function(){
+    $(this).remove();
+  });
 });
