@@ -1,0 +1,70 @@
+body{
+    background: rgb(200,200,200);
+    color: rgb(255,255,255);
+  }
+  
+  input {
+    margin: 0.1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  button{
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li{
+    background: rgba(200,200,200,0.25);
+    padding: 0.25rem 0.5rem;
+    margin: 1rem auto 0.5rem auto;
+    border-radius: 1rem;
+    min-width: 10rem;
+    max-width: 20rem;
+  }
+  
+  .main{
+    display: flex;
+  }
+  
+  .header{
+    background: rgba(0,0,0,0.65);
+    width: 95%;
+    margin: auto;
+    padding: 0.1rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  
+  .right-container{
+    background: rgba(0,0,0,0.65);
+    padding: 1rem;
+    margin: 1rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .left-container{
+    background: rgba(0,0,0,0.65);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .contact{
+    background: rgba(200,200,200,0.55)
+  }
+  
+  .delete{
+    float: left;
+  }
