@@ -9,6 +9,10 @@ input {
   padding: 0.5rem;
 }
 
+input:focus {
+  box-shadow: 0 0 0 1pt #5E9ED6;
+}
+
 button{
   margin: 0.5rem;
   border-radius: 0.25rem;
