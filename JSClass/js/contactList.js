@@ -9,20 +9,10 @@ const contactDisplay = $("#contactList");
 var contacts;
 var contactList;
 
-//function to store list of contacts in localstorage
-const storeList = function(list) {
-  localStorage.setItem("contacts", JSON.stringify(list));
-};
-
-//function to check localstorage for existing contact list
-const listCheck = function() {
-  contactList = JSON.parse(localStorage.getItem("contacts"));
-  if (contactList) {
-    return contactList;
-  } else {
-    return (contactList = []);
-  }
-};
+//function to append contacts to display list
+const appendContacts = function(list, contact){
+  list.append(`<li><span class="delete far fa-trash-alt"></span> Name: <span class="listName">${contact.name}</span><br>Phone: ${contact.phone}<br>Email: ${contact.email}`);
+}
 
 //function to display list of contacts in local storage
 const displayList = function() {
@@ -33,9 +23,7 @@ const displayList = function() {
   if (contacts) {
     //loop through contact list and display each contact
     contacts.forEach(function(val) {
-      contactDisplay.append(
-        `<li> Name: <span class="listName">${val.name}</span><br><span class="delete far fa-trash-alt"></span> Phone: ${val.phone}<br>Email: ${val.email}`
-      );
+      appendContacts(contactDisplay, val);
     });
   }
 };
@@ -68,13 +56,13 @@ $("#addContactBtn").on("click", function() {
     contact.email = contactEmail.val();
     //push contact to array of contacts
     contactList.push(contact);
+    //clear entry fields
     contactName.val("");
     contactNN.val("");
     contactPhone.val("");
     contactEmail.val("");
-    contactDisplay.append(
-      `<li>Name: <span class="listName">${contact.name}</span><br><span class="delete far fa-trash-alt"></span> Phone: ${contact.phone}<br>Email: ${contact.email}`
-    );
+    //add contact to display
+    appendContacts(contactDisplay, contact);
   }
   //add contact object to contact list array
   storeList(contactList);
@@ -93,17 +81,15 @@ $("#searchBtn").on("click", function() {
     contacts.forEach(function(contact) {
       //check if the searched name, email, or phone number matches a stored contact
       if (contact.name.toLowerCase().includes(search.val().toLowerCase()) || contact.nickname.toLowerCase().includes(search.val().toLowerCase()) || contact.email.includes(search.val()) || search.val().replace(/[^0-9]/gi, "") === contact.phone.replace(/[^0-9]/gi, "")) {
-        searchDisplay.append(
-          `<li>Name: <span class="listName">${contact.name}</span><br><span class="delete far fa-trash-alt"></span> Phone: ${contact.phone}<br> Email: ${contact.email}`
-        );
+        //display search results
+        appendContacts(searchDisplay, contact);
         //check if the search value matches a contacts phone number without the leading digit
       } else if (
         search.val().replace(/[^0-9]/gi, "") ===
         contact.phone.replace(/[^0-9]/gi, "").substring(1)
       ) {
-        searchDisplay.append(
-          `<li>Name: <span class="listName">${contact.name}</span><br><span class="delete far fa-trash-alt"></span> Phone: ${contact.phone}<br> Email: ${contact.email}`
-        );
+        //display search results
+        appendContacts(searchDisplay, contact);
       }
     });
   }
@@ -130,3 +116,18 @@ $("ul").on("click", ".delete", function(event) {
       $(this).remove();
     });
 });
+
+//function to check localstorage for existing contact list
+const listCheck = function() {
+  contactList = JSON.parse(localStorage.getItem("contacts"));
+  if (contactList) {
+    return contactList;
+  } else {
+    return (contactList = []);
+  }
+};
+
+//function to store list of contacts in localstorage
+const storeList = function(list) {
+  localStorage.setItem("contacts", JSON.stringify(list));
+};
