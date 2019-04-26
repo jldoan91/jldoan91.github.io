@@ -10,9 +10,13 @@ var contacts;
 var contactList;
 
 //function to append contacts to display list
-const appendContacts = function(list, contact){
-  list.append(`<li><span class="delete far fa-trash-alt"></span> Name: <span class="listName">${contact.name}</span><br>Phone: ${contact.phone}<br>Email: ${contact.email}`);
-}
+const appendContacts = function(list, contact) {
+  list.append(
+    `<li><span class="delete far fa-trash-alt"></span> Name: <span class="listName">${
+      contact.name
+    }</span><br>Phone: ${contact.phone}<br>Email: ${contact.email}`
+  );
+};
 
 //function to display list of contacts in local storage
 const displayList = function() {
@@ -80,7 +84,13 @@ $("#searchBtn").on("click", function() {
     //loop through the list of contacts in localstorage
     contacts.forEach(function(contact) {
       //check if the searched name, email, or phone number matches a stored contact
-      if (contact.name.toLowerCase().includes(search.val().toLowerCase()) || contact.nickname.toLowerCase().includes(search.val().toLowerCase()) || contact.email.includes(search.val()) || search.val().replace(/[^0-9]/gi, "") === contact.phone.replace(/[^0-9]/gi, "")) {
+      if (
+        contact.name.toLowerCase().includes(search.val().toLowerCase()) ||
+        contact.nickname.toLowerCase().includes(search.val().toLowerCase()) ||
+        contact.email.includes(search.val()) ||
+        search.val().replace(/[^0-9]/gi, "") ===
+          contact.phone.replace(/[^0-9]/gi, "")
+      ) {
         //display search results
         appendContacts(searchDisplay, contact);
         //check if the search value matches a contacts phone number without the leading digit
@@ -112,9 +122,13 @@ $("ul").on("click", ".delete", function(event) {
   });
   //set localstorage to new array without the clicked contact
   storeList(contactList);
-  $(this).parent().fadeOut(500, function() {
-      $(this).remove();
-    });
+  //loop over spans that contain the clicked contacts name
+  $(`span.listName:contains(${clickedName})`).each(function() {
+    //remove and fadeout the clicked name anywhere it's displayed
+    $(this).parent().fadeOut(500, function() {
+        $(this).remove();
+      });
+  });
 });
 
 //function to check localstorage for existing contact list
