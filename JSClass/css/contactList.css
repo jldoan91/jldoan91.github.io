@@ -74,5 +74,6 @@ li{
   float: left;
   cursor: pointer;
   color: rgb(255,50,50);
-  width: 0.9rem;
+  width: 0.8rem;
+  margin: 0.1rem;
 }
